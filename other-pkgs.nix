@@ -5,5 +5,6 @@
     wireshark
     R
     rstudio
+    obsidian
   ];
 }

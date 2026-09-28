@@ -9,6 +9,7 @@
       ./machine.nix
       ./users.nix
       ./network.nix
+      ./other-pkgs.nix
     ];
 
   time.timeZone = "Europe/Nicosia";

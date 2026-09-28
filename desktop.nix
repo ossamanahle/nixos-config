@@ -14,6 +14,7 @@
   waybar
   mako
   fuzzel
+  yazi
   swaybg
   hyprcursor
   simp1e-cursors

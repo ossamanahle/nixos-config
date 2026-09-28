@@ -17,6 +17,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [ "electron-41.10.7" ];
-  
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "26.05";
   }

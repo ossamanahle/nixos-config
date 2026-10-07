@@ -21,6 +21,8 @@
   pi-coding-agent
   tree-sitter
   unzip
+  awscli2
+  ssm-session-manager-plugin
   ];
 
   virtualisation.docker.enable = true;

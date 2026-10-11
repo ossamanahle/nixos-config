@@ -19,6 +19,7 @@
   pass
   claude-code
   pi-coding-agent
+  opencode
   tree-sitter
   unzip
   awscli2

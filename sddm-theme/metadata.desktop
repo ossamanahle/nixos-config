@@ -1,0 +1,7 @@
+[SddmGreeterTheme]
+Name=minimal
+Description=Minimal clock/user/session/password theme
+Type=sddm-theme
+Version=1.0
+MainScript=Main.qml
+QtVersion=6

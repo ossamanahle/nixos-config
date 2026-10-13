@@ -59,8 +59,15 @@
 
   security.polkit.enable =  true;
   security.pam.services.hyprlock = {};
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  environment.etc."sddm/themes/minimal".source = ./sddm-theme;
+
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+    theme = "minimal";
+    extraPackages = [ pkgs.nerd-fonts.jetbrains-mono ];
+    settings.Theme.ThemeDir = "/etc/sddm/themes";
+  };
 
   programs.firefox.enable = true;
 

@@ -24,6 +24,7 @@
   unzip
   awscli2
   ssm-session-manager-plugin
+  python314
   ];
 
   virtualisation.docker.enable = true;

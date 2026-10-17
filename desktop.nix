@@ -26,6 +26,7 @@
   zathuraPkgs.zathura_pdf_mupdf
   libreoffice
   alacritty
+  ghostty
   firefox
   brightnessctl
   fastfetch

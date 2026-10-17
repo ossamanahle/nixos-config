@@ -16,6 +16,7 @@
   tldr 
   nodejs
   gcc
+  cargo
   pass
   claude-code
   pi-coding-agent

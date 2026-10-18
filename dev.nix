@@ -16,6 +16,7 @@
   tldr 
   nodejs
   gcc
+  direnv
   cargo
   pass
   claude-code

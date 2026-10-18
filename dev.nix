@@ -30,4 +30,8 @@
 
   virtualisation.docker.enable = true;
   programs.ssh.startAgent = true;
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+  };
 }

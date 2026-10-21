@@ -4,7 +4,7 @@
   users.users.ossama = {
 	isNormalUser = true;
 	description = "ossama";
-	extraGroups = [ "wheel" "docker" "networkmanager" ];
+	extraGroups = [ "wheel" "docker" "networkmanager" "wireshark" ];
 	shell = pkgs.zsh;
 	home = "/home/ossama";
   };

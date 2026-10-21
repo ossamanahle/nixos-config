@@ -2,9 +2,13 @@
 
 {
   environment.systemPackages = with pkgs; [
-    wireshark
     R
     rstudio
     obsidian
   ];
+
+  programs.wireshark = {
+    enable = true;
+    package = pkgs.wireshark; # default is wireshark-cli (no GUI)
+  };
 }

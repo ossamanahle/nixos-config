@@ -21,5 +21,18 @@
   programs.nix-ld.libraries = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.keep-outputs = true;
+
+  nix.optimise = {
+    automatic = true;
+    dates = [ "weekly" ];
+  };
+
+  nix.gc = {
+    automatic = true;
+    dates = [ "weekly" ];
+    options = "--delete-older-than 14d";
+  };
+
   system.stateVersion = "26.05";
   }

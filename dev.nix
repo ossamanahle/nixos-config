@@ -26,6 +26,7 @@
   unzip
   awscli2
   ssm-session-manager-plugin
+  stow
   ];
 
   virtualisation.docker.enable = true;

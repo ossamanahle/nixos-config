@@ -27,6 +27,20 @@
   awscli2
   ssm-session-manager-plugin
   stow
+
+  # LSP servers (nvim enables whichever is on PATH; no Mason)
+  lua-language-server
+  pyright
+  clang-tools # clangd
+  typescript-language-server
+  jdt-language-server # jdtls, needs a JDK
+  vscode-langservers-extracted # html, cssls, jsonls
+  yaml-language-server
+  taplo
+  nil
+  bash-language-server
+  shellcheck
+  dockerfile-language-server
   ];
 
   virtualisation.docker.enable = true;

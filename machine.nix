@@ -5,7 +5,11 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.device =  "/dev/nvme0n1";
-  boot.kernelParams = [ "nvidia-drm.modeset=1" "mem_sleep_default=deep" ];
+  boot.kernelParams = [
+    "nvidia-drm.modeset=1"
+    "mem_sleep_default=deep"
+    "nvidia.NVreg_TemporaryFilePath=/var/tmp"
+  ];
 
   # Swap: 8 GB file on / plus compressed RAM swap (zram).
   # zram gets higher priority automatically, so the disk file is a last resort.
@@ -29,7 +33,7 @@
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = true;
-    powerManagement.finegrained = true;
+    powerManagement.finegrained = false;
     open = true;
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;

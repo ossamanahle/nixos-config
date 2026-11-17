@@ -7,7 +7,7 @@
   boot.loader.grub.device =  "/dev/nvme0n1";
   boot.kernelParams = [
     "nvidia-drm.modeset=1"
-    "mem_sleep_default=deep"
+    "mem_sleep_default=s2idle"
     "nvidia.NVreg_TemporaryFilePath=/var/tmp"
   ];
 
